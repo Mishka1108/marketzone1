@@ -22,6 +22,7 @@ exports.addProduct = async (req, res) => {
       description: req.body.description,
       image: imageUrl,
       location: req.body.location,
+      phone: req.body.phone
     });
 
     res.status(201).json({
